@@ -1,24 +1,5 @@
-# Assumes you have Chocolatey installed for choco installs if needed
-#
-# ===================IMPORTANT===================
-# YOU MUST INSURE THAT YOU HAVE THE EXECUTABLES INSTALLED
-# FOR EVERYTHING THATS NOT A PIP OR NPM INSTALL
-# 
-#
-# this will install the following as GLOBAL beautifiers:
-#
-# Unibeautify-cli: the main Unibeautify package
-# Black
-# ClangFormat
-# Gofmt
-# JS-Beautify
-# PHP-CS-Fixer
-# PHP_CodeSniffer
-# Prettier
-# Pretty Diff
-#
 Set-ExecutionPolicy Bypass -Scope Process -Force
-function beautifier_install (){
+function beautifier_install {
 # Uncomment the line below to install node as well
 # choco install nodejs
 #
@@ -63,13 +44,13 @@ npm install --global @unibeautify/beautifier-prettydiff
 }
 
 beautifier_install
-cls
-ECHO ALL DONE
-ECHO
-ECHO Go to:
-ECHO
-ECHO https://assistant.unibeautify.com/#/setup
-ECHO
-ECHO for setup assistance
-ECHO
-ECHO Dont forget the read the docs!
+Clear-Host
+Write-Output ALL DONE
+Write-Output
+Write-Output Go to:
+Write-Output
+Write-Output https://assistant.unibeautify.com/#/setup
+Write-Output
+Write-Output for setup assistance
+Write-Output
+Write-Output Dont forget the read the docs!
